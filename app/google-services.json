@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "850114364560",
+    "project_id": "duckbanglow-77572",
+    "storage_bucket": "duckbanglow-77572.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850114364560:android:7f616e39501c66eac30415",
+        "android_client_info": {
+          "package_name": "com.duckbanglowofficial.duckbanglow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850114364560-p8cfrc3et9qbu1qu33kfj6u8stf41602.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxqO3FeDftkcTim5NHgRTByGUl8aBRhDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850114364560-p8cfrc3et9qbu1qu33kfj6u8stf41602.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
