@@ -12,16 +12,21 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.duckbanglowofficial.duckbanglow.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
     private ProgressBar progressbar;
     private TextView tv_copyright;
+    FirebaseAuth firebaseAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        firebaseAuth = FirebaseAuth.getInstance();
+
 
         progressbar=findViewById(R.id.progressbar);
         tv_copyright=findViewById(R.id.tv_copyright);
@@ -39,6 +44,9 @@ public class SplashScreenActivity extends AppCompatActivity {
 
             }
         });
+
+
+
     }
 
     @Override
@@ -47,9 +55,16 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(SplashScreenActivity.this, SignInActivity.class);
-                startActivity(intent);
-                finish();
+                if (firebaseAuth.getCurrentUser()!=null){
+                    Intent intent = new Intent(SplashScreenActivity.this,MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                }else {
+                    Intent intent=new Intent(SplashScreenActivity.this, SignInActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
             }
         }, 3000);
 
@@ -57,4 +72,6 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         super.onResume();
     }
+
+
 }

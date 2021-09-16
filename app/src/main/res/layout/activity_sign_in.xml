@@ -73,21 +73,21 @@
         android:id="@+id/tv_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/phonenumber"
+        android:text="@string/email"
         android:textColor="@color/colorPrimary"
         android:textSize="12sp"
         android:gravity="start"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/et_username">
+        app:layout_constraintBottom_toTopOf="@id/et_user_email">
 
     </TextView>
 
 
     <EditText
-        android:id="@+id/et_username"
+        android:id="@+id/et_user_email"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@color/colorPrimary"
-        android:inputType="number"
+        android:inputType="textEmailAddress"
         android:layout_marginBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,6 +116,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@color/colorPrimary"
         android:inputType="textPassword"
+        app:passwordToggleEnabled="true"
         android:layout_marginBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

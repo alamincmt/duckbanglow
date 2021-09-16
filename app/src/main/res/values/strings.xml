@@ -11,6 +11,7 @@
     <string name="password">PASSWORD</string>
     <string name="phonenumber">PHONE NUMBER</string>
     <string name="user_name">Username</string>
+    <string name="user_email">Email</string>
     <string name="register_with_facebook">REGISTER WITH FACEBOOK</string>
     <string name="register">REGISTER</string>
     <string name="gender">Gender</string>

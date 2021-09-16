@@ -18,9 +18,7 @@ public class DivisionViewModel extends AndroidViewModel {
 
     public DivisionViewModel(@NonNull Application application) {
         super(application);
-
         divisionRepository = DivisionRepositoryImpl.getInstance(application);
-
     }
 
     public LiveData<List<DivisionData>> getTotalDivisionList(){

@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         initListeners();
 
-        divisionViewModel.getTotalDivisionList().observe(this, new Observer<List<DivisionData>>() {
+       /* divisionViewModel.getTotalDivisionList().observe(this, new Observer<List<DivisionData>>() {
             @Override
             public void onChanged(List<DivisionData> divisions) {
                 if(divisions != null){
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     // division data not found
                 }
             }
-        });
+        });*/
     }
 
     private void initViews() {
