@@ -113,6 +113,8 @@ public class SignUpActivity extends AppCompatActivity {
                         }
                     });
 
+                }else{
+                    Toast.makeText(SignUpActivity.this, "Please fill up all the information first. ", Toast.LENGTH_LONG).show();
                 }
             }
         });

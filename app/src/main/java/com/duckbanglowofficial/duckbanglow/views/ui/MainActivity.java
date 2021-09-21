@@ -12,7 +12,6 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.duckbanglowofficial.duckbanglow.R;
-import com.duckbanglowofficial.duckbanglow.services.models.Division;
 import com.duckbanglowofficial.duckbanglow.services.models.DivisionData;
 import com.duckbanglowofficial.duckbanglow.viewmodels.DivisionViewModel;
 
@@ -24,18 +23,19 @@ public class MainActivity extends AppCompatActivity {
 
     private DivisionViewModel divisionViewModel;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        divisionViewModel = new ViewModelProvider(this).get(DivisionViewModel.class);
 
+        divisionViewModel = new ViewModelProvider(this).get(DivisionViewModel.class);
 
         initViews();
         initListeners();
 
-       /* divisionViewModel.getTotalDivisionList().observe(this, new Observer<List<DivisionData>>() {
+        divisionViewModel.getTotalDivisionList().observe(this, new Observer<List<DivisionData>>() {
             @Override
             public void onChanged(List<DivisionData> divisions) {
                 if(divisions != null){
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     // division data not found
                 }
             }
-        });*/
+        });
     }
 
     private void initViews() {
