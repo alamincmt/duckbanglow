@@ -11,7 +11,7 @@
 
 
     <TextView
-        android:textSize="16sp"
+        android:textSize="22sp"
         android:textColor="@color/black"
         android:text="Our Service"
         android:textAlignment="center"
@@ -56,7 +56,7 @@
                     android:layout_below="@id/iv_profile"
                     android:padding="5dp"
                     android:gravity="center"
-                    android:text="Car"
+                    android:text="Vehicle"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp" />
@@ -184,7 +184,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/iv_contactus"
                     android:padding="5dp"
-                    android:text="Room"
+                    android:text="Residence"
                     android:gravity="center"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"

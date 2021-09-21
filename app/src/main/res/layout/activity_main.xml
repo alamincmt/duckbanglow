@@ -85,6 +85,7 @@
             sweet:cardCornerRadius="10dp">
 
             <RelativeLayout
+                android:id="@+id/rlv_request_service"
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:orientation="vertical">

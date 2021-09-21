@@ -41,4 +41,9 @@ public class ServiceActivity extends AppCompatActivity {
         intent.putExtra("purpose",purpose);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }

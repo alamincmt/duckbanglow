@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.duckbanglowofficial.duckbanglow.R;
@@ -19,16 +20,14 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout ll_profile_start,ll_requestservice_start,ll_contactus_start,ll_howtouse_start;
-
+    LinearLayout ll_profile_start,ll_contactus_start,ll_howtouse_start;
+    RelativeLayout rlv_request_service;
     private DivisionViewModel divisionViewModel;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         divisionViewModel = new ViewModelProvider(this).get(DivisionViewModel.class);
 
@@ -41,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 if(divisions != null){
                     // divisions data found.
 
+
+
                 }else{
                     // division data not found
                 }
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViews() {
         ll_profile_start=findViewById(R.id.ll_profile_start);
-        ll_requestservice_start=findViewById(R.id.ll_requestservice_start);
+        rlv_request_service=findViewById(R.id.rlv_request_service);
         ll_contactus_start=findViewById(R.id.ll_contactus_start);
         ll_howtouse_start=findViewById(R.id.ll_howtouse_start);
     }
@@ -60,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Profile.class));
+                finish();
+            }
+        });
+
+        rlv_request_service.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ServiceActivity.class));
                 finish();
             }
         });

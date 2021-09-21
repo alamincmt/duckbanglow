@@ -55,6 +55,7 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
         profile_image = findViewById(R.id.profile_image);
         tv_user_name = findViewById(R.id.tv_user_name);
         tv_short_details = findViewById(R.id.tv_short_details);
@@ -109,8 +110,6 @@ public class Profile extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-        finish();
         super.onBackPressed();
     }
 
@@ -177,5 +176,7 @@ public class Profile extends AppCompatActivity {
                 });
             }
     }
+
+
 
 }

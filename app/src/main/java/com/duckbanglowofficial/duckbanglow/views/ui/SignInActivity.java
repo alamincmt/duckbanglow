@@ -35,6 +35,7 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+
         firebaseAuth = FirebaseAuth.getInstance();
         et_user_email=findViewById(R.id.et_user_email);
         et_password=findViewById(R.id.et_password);
@@ -86,5 +87,10 @@ public class SignInActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
