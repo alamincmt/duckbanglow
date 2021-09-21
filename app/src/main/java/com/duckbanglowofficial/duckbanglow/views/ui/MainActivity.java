@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onChanged(List<DivisionData> divisions) {
                 if(divisions != null){
                     // divisions data found.
+
                 }else{
                     // division data not found
                 }

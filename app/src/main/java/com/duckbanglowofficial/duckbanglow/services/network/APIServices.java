@@ -7,7 +7,7 @@ import retrofit2.http.GET;
 
 public interface APIServices {
 
-    @GET("getDivisionList")
+    @GET("divisions")
     Call<Division> getDivisionList();
 
 }

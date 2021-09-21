@@ -1,6 +1,7 @@
 package com.duckbanglowofficial.duckbanglow.services.repository;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.lifecycle.MutableLiveData;
 
@@ -52,7 +53,7 @@ public class DivisionRepositoryImpl implements DivisionRepository {
 
             @Override
             public void onFailure(Call<Division> call, Throwable t) {
-
+                Log.d("AlAmin", "Debug: " + t.getMessage());
             }
         });
 
