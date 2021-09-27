@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ui.admin.FoodAddActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardUseCompatPadding="false"
+                app:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lay_purpose_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edt_food_name"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_border"
+                                android:elevation="10dp"
+                                android:hint="Food Name"
+                                android:inputType="text"
+                                android:paddingStart="8dp"
+                                android:paddingBottom="4dp"
+                                android:paddingEnd="4dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/add_properties_text"
+                                android:textColorHint="@color/add_properties_text"
+                                android:textSize="14sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="4dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_food_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lay_purpose_name"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edt_food_price"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_border"
+                                android:elevation="10dp"
+                                android:hint="Food Price"
+                                android:inputType="number"
+                                android:paddingStart="8dp"
+                                android:paddingBottom="4dp"
+                                android:paddingEnd="4dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/add_properties_text"
+                                android:textColorHint="@color/add_properties_text"
+                                android:textSize="14sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="4dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_purpose_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lay_food_price"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edt_food_desc"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:minHeight="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_border"
+                                android:elevation="10dp"
+                                android:hint="Food Details"
+                                android:inputType="text"
+                                android:minLines="3"
+                                android:paddingStart="8dp"
+                                android:paddingBottom="4dp"
+                                android:paddingEnd="4dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/add_properties_text"
+                                android:textColorHint="@color/add_properties_text"
+                                android:textSize="14sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="4dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_restaurant_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lay_purpose_desc"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edt_restaurant_name"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_border"
+                                android:elevation="10dp"
+                                android:hint="Restaurant Name"
+                                android:inputType="text"
+                                android:paddingStart="8dp"
+                                android:paddingBottom="4dp"
+                                android:paddingEnd="4dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/add_properties_text"
+                                android:textColorHint="@color/add_properties_text"
+                                android:textSize="14sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="4dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_purpose_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lay_restaurant_name"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edt_restaurant_phone"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_border"
+                                android:elevation="10dp"
+                                android:hint="Restaurant Phone"
+                                android:inputType="phone"
+                                android:paddingStart="8dp"
+                                android:paddingBottom="4dp"
+                                android:paddingEnd="4dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/add_properties_text"
+                                android:textColorHint="@color/add_properties_text"
+                                android:textSize="14sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="4dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_purpose_section"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/lay_purpose_phone"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spPropertyPurpose"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_border"
+                                android:elevation="10dp"
+                                android:spinnerMode="dropdown"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:layout_marginRight="5dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_purpose_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lay_purpose_section"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edt_Purpose_address"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_border"
+                                android:elevation="10dp"
+                                android:hint="Restaurant Address"
+                                android:inputType="text"
+                                android:paddingStart="8dp"
+                                android:paddingBottom="4dp"
+                                android:paddingEnd="4dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/add_properties_text"
+                                android:textColorHint="@color/add_properties_text"
+                                android:textSize="14sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="4dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_purpose_feature_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lay_purpose_address"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Food Image"
+                            android:textColor="@color/add_properties_text"
+                            android:textSize="14sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/lay_rel_feature"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_border"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_food"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/image_select"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableStart="@drawable/add_image"
+                                android:drawableLeft="@drawable/add_image"
+                                android:drawablePadding="5dp"
+                                android:gravity="center"
+                                android:text="@string/select_image"
+                                android:textColor="@color/add_properties_text"
+                                android:textSize="14sp"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nid"
+                        android:visibility="gone"
+                        android:layout_below="@+id/lay_purpose_feature_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Restaurant Owner Nid"
+                            android:textColor="@color/add_properties_text"
+                            android:textSize="14sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/lay_nid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_border"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_nid"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/text_select"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="5dp"
+                                android:drawableStart="@drawable/add_image"
+                                android:gravity="center"
+                                android:text="@string/select_image"
+                                android:textColor="@color/add_properties_text"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                android:drawableLeft="@drawable/add_image" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lay_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nid"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btn_sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/submit_button"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:elevation="0dp"
+                            android:text="@string/submit"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -47,6 +47,7 @@
                     android:layout_below="@id/iv_profile"
                     android:padding="5dp"
                     android:text="Profile"
+                    android:gravity="center"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp" />
@@ -107,6 +108,7 @@
                     android:layout_below="@id/iv_request_service"
                     android:padding="5dp"
                     android:text="Request for Service"
+                    android:gravity="center"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp" />
@@ -174,6 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/iv_contactus"
                     android:padding="5dp"
+                    android:gravity="center"
                     android:text="Contact Us"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
@@ -234,6 +237,7 @@
                     android:layout_below="@id/iv_howtouse"
                     android:padding="5dp"
                     android:text="How to Use"
+                    android:gravity="center"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp" />
@@ -256,13 +260,11 @@
                         android:textColor="#ffffff"
                         android:textSize="17sp" />
 
-
                 </LinearLayout>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
 
     </LinearLayout>
-
 
 </LinearLayout>

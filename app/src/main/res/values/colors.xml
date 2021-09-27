@@ -12,4 +12,7 @@
     <color name="goodgrey">#535353</color>
     <color name="blue">#293859</color>
     <color name="lightgrey">#EEEEEE</color>
+
+    <color name="add_properties_text">#727272</color>
+
 </resources>

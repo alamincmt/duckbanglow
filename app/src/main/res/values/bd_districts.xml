@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bd_district">
+        <item>Dhaka</item>
+        <item>Faridpur</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Jamalpur</item>
+        <item>Kishoreganj</item>
+        <item>Madaripur</item>
+        <item>Manikganj</item>
+        <item>Munshiganj</item>
+        <item>Mymensingh</item>
+        <item>Narayanganj</item>
+        <item>Narsingdi</item>
+        <item>Netrokona</item>
+        <item>Rajbari</item>
+        <item>Shariatpur</item>
+        <item>Sherpur</item>
+        <item>Tangail</item>
+        <item>Bogura</item>
+        <item>Joypurhat</item>
+        <item>Naogaon</item>
+        <item>Natore</item>
+        <item>Nawabganj</item>
+        <item>Pabna</item>
+        <item>Rajshahi</item>
+        <item>Sirajgonj</item>
+        <item>Dinajpur</item>
+        <item>Gaibandha</item>
+        <item>Kurigram</item>
+        <item>Lalmonirhat</item>
+        <item>Nilphamari</item>
+        <item>Panchagarh</item>
+        <item>Rangpur</item>
+        <item>Thakurgaon</item>
+        <item>Barguna</item>
+        <item>Barishal</item>
+        <item>Bhola</item>
+        <item>Jhalokati</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Bandarban</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chattogram</item>
+        <item>Cumilla</item>
+        <item>Cox Bazar</item>
+        <item>Feni</item>
+        <item>Khagrachari</item>
+        <item>Lakshmipur</item>
+        <item>Noakhali</item>
+        <item>Rangamati</item>
+        <item>Habiganj</item>
+        <item>Maulvibazar</item>
+        <item>Sunamganj</item>
+        <item>Sylhet</item>
+        <item>Bagerhat</item>
+        <item>Chuadanga</item>
+        <item>Jashore</item>
+        <item>Jhenaidah</item>
+        <item>Khulna</item>
+        <item>Kushtia</item>
+        <item>Magura</item>
+        <item>Meherpur</item>
+        <item>Narail</item>
+        <item>Satkhira</item>
+    </string-array>
+</resources>

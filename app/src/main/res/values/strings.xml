@@ -37,5 +37,14 @@
     <string name="about_me">About Me</string>
     <string name="my_desc">Doing at the sweet spot between aesthetics and elegance to give life to your brand.My opinion belong to nobody but myself.</string>
     <string name="skills">Skills</string>
+    <string name="select_image">Select Image</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="items_class">
+        <item>Class 1</item>
+        <item>Class 2</item>
+        <item>Class 3</item>
+        <item>Class 4</item>
+    </string-array>
 
 </resources>
